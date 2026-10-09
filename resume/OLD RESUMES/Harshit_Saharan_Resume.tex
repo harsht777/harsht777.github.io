@@ -1,0 +1,166 @@
+\documentclass[letterpaper,9.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{geometry}
+
+% Document Geometry
+\geometry{
+  top=0.35in,
+  bottom=0.35in,
+  left=0.45in,
+  right=0.45in
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting with clean subtle styling
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-3.5pt}]
+
+% Custom list styling for ATS and visual elegance
+\renewcommand\labelitemi{\raisebox{0.18ex}{\tiny$\bullet$}}
+\renewcommand\labelitemii{\raisebox{0.15ex}{\tiny$\circ$}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, labelsep=0.06in, itemsep=0.8pt, topsep=0.5pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
+
+\newcommand{\resumeSkillListStart}{\begin{itemize}[leftmargin=0.18in, labelsep=0.06in, itemsep=1.2pt, topsep=0.5pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeSkillListEnd}{\end{itemize}\vspace{1.5pt}}
+
+% Header Macros with 2-line Subheading
+\newcommand{\resumeExpHeader}[4]{
+  \vspace{1pt}
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-3.5pt}
+}
+
+\newcommand{\resumeProjectHeader}[4]{
+  \vspace{1pt}
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-3.5pt}
+}
+
+\newcommand{\resumeCertHeader}[3]{
+  \vspace{0.5pt}
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} $\vert$ \textit{\small #2} & \textbf{\small #3} \\
+  \end{tabular*}\vspace{-3.5pt}
+}
+
+\newcommand{\resumeEduHeader}[4]{
+  \vspace{1pt}
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-3pt}
+}
+
+% Hyperlink styling
+\definecolor{primary}{RGB}{20, 50, 90}
+\definecolor{linkcolor}{RGB}{0, 75, 145}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=linkcolor,      
+    urlcolor=linkcolor,
+}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\Huge \textbf{HARSHIT SAHARAN}} \\ \vspace{2pt}
+    {\large \textbf{\color{primary}AWS Cloud Engineer $\vert$ DevOps $\vert$ SRE}} \\ \vspace{3.5pt}
+    \small 
+    +91 9416246795 $\;\vert\;$ 
+    \href{mailto:harshit777saharan@gmail.com}{harshit777saharan@gmail.com} $\;\vert\;$ 
+    \href{https://linkedin.com/in/harshitsaharan}{linkedin.com/in/harshitsaharan} $\;\vert\;$ 
+    \href{https://github.com/harsht777}{github.com/harsht777} $\;\vert\;$ 
+    \href{https://harsht777.github.io/}{harsht777.github.io}
+\end{center}
+\vspace{-10pt}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\vspace{1pt}
+\small{
+AWS Certified Solutions Architect (Associate) and Cloud Practitioner with hands-on expertise architecting highly available cloud infrastructure on AWS, building automated CI/CD pipelines (Jenkins, Docker), and instrumenting SRE telemetry (Prometheus, Grafana). Experienced in multi-tier network isolation (VPC, Security Groups, ALB), IAM governance, Linux system administration, and proactive reliability engineering.
+}
+\vspace{2pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\resumeSkillListStart
+  \item \small{\textbf{Cloud Platforms \& Compute:} AWS (VPC, Subnets, EC2, ALB, Auto Scaling Groups, S3, Aurora MySQL, IAM, CloudWatch, Route 53, CloudFront), Multi-AZ High Availability, Fault-Tolerant Architecture}
+  \item \small{\textbf{DevOps \& CI/CD Automation:} Docker, Docker Compose, Jenkins CI/CD Pipelines (\texttt{Jenkinsfile}), Pytest, Git, GitHub, Linux/Bash Scripting, Automated Testing, Multi-Stage Builds}
+  \item \small{\textbf{SRE \& Observability:} Prometheus (Time-Series Scraping, PromQL, Alert Rules), Grafana (SLA Dashboards, Telemetry Visualization), Health Probes, HTTP Error Rate (5xx) Tracking, P95 Latency Histograms}
+  \item \small{\textbf{Systems, Networking \& Security:} Nginx Reverse Proxy, Security Group Chaining, IAM Least Privilege, Origin Access Control (OAC), REST APIs (Python/Flask, Node.js/Express), Web Security (Burp Suite, OWASP)}
+\resumeSkillListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeCertHeader{AWS Certified Solutions Architect -- Associate (SAA-C03)}{Amazon Web Services}{2026}
+\resumeCertHeader{AWS Certified Cloud Practitioner (CLF-C02)}{Amazon Web Services}{2026}
+\vspace{2pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeExpHeader{SRE / DevOps Intern (Assessment \& Pipeline Implementation)}{Sept 2026}{Hiyaku Systems}{Mohali, India}
+\resumeItemListStart
+  \item \small{Engineered and containerized a modular Python Flask REST microservice with \texttt{/health} and Prometheus \texttt{/metrics} endpoints, fronted by an Nginx reverse proxy on Port 80 for production traffic handling.}
+  \item \small{Constructed an end-to-end declarative \textbf{Jenkins CI/CD pipeline} automating code checkout, dependency isolation, Pytest test suites, Docker image builds, and zero-downtime Docker Compose deployment.}
+  \item \small{Configured \textbf{Prometheus} time-series scraping (5s interval) and designed \textbf{Grafana} monitoring dashboards tracking request volume, 5xx error rates, and P95 latency thresholds with active alerting rules.}
+\resumeItemListEnd
+
+\resumeExpHeader{Application Vulnerability Assessment \& Web Security (VAPT)}{2025 -- 2026}{Security Assessment \& API Analysis}{Academic / Practical Testing}
+\resumeItemListStart
+  \item \small{Conducted vulnerability assessments on web applications and REST endpoints using \textbf{Burp Suite} for HTTP/HTTPS traffic interception, parameter tampering, and request/response manipulation.}
+  \item \small{Evaluated server response headers, CORS configurations, and client-side authentication mechanisms against OWASP Top 10 guidelines to identify and mitigate potential security weaknesses.}
+\resumeItemListEnd
+
+%-----------PROJECTS-----------
+\section{Key Cloud \& Infrastructure Projects}
+\resumeProjectHeader{AWS Multi-Tier High-Availability Web Application Architecture}{2026}{Cloud Infrastructure Project $\;\vert\;$ AWS (VPC, EC2, ALB, ASG, Aurora MySQL, CloudWatch)}{AWS Cloud}
+\resumeItemListStart
+  \item \small{Architected a 3-tier web infrastructure inside a custom VPC with multi-AZ segmentation across public web, private application, and isolated database subnets to ensure high availability and zero single points of failure.}
+  \item \small{Configured an \textbf{Internal Application Load Balancer (ALB)} and \textbf{Auto Scaling Group (ASG)} across Availability Zones, dynamically adjusting EC2 capacity based on CloudWatch CPU utilization metrics.}
+  \item \small{Enforced database isolation on \textbf{Amazon Aurora / MySQL} via strict Security Group chaining (inbound port 3306 restricted exclusively to App SG) and IAM role authentication with CloudWatch alarm triggers.}
+\resumeItemListEnd
+
+\resumeProjectHeader{Secure Static Website Hosting with S3, CloudFront \& Global CDN}{2025}{Storage \& Edge Delivery Project $\;\vert\;$ AWS (S3, CloudFront, Route 53, IAM OAC, ACM)}{AWS Cloud}
+\resumeItemListStart
+  \item \small{Deployed high-performance static web infrastructure on \textbf{Amazon S3} integrated with \textbf{Amazon CloudFront CDN} for low-latency global distribution, caching optimization, and Route 53 custom DNS routing.}
+  \item \small{Enforced strict \textbf{Origin Access Control (OAC)} to block direct public S3 bucket access, configured SSL/TLS certificate termination via ACM, and implemented custom SPA 404-to-index redirection.}
+\resumeItemListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeEduHeader{Bachelor of Engineering in Computer Science \& Engineering (B.E. CSE)}{Graduated: June 2026}{Chandigarh University $\;\vert\;$ \textbf{CGPA: 7.19}}{Mohali, Punjab, India}
+
+\end{document}
